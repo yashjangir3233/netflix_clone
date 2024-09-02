@@ -38,5 +38,5 @@ app.get('/', (request, response, next) => response.status(200).json('MERN netfli
 app.listen(PORT, () => {
 	console.log("Server started at http://localhost:" + PORT);
 	connectDB();
-	res.send("connected")
+	// res.send("connected")
 });
