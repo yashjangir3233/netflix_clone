@@ -19,11 +19,11 @@ const WatchPage = () => {
 	const { contentType } = useContentStore();
 
 	const sliderRef = useRef(null);
-	const URL = "https://netflix-clone-eta-snowy-95.vercel.app"
+
 	useEffect(() => {
 		const getTrailers = async () => {
 			try {
-				const res = await axios.get(`${URL}/api/v1/${contentType}/${id}/trailers`);
+				const res = await axios.get(`/api/v1/${contentType}/${id}/trailers`);
 				setTrailers(res.data.trailers);
 			} catch (error) {
 				if (error.message.includes("404")) {

@@ -19,11 +19,11 @@ const SearchPage = () => {
 		tab === "movie" ? setContentType("movie") : setContentType("tv");
 		setResults([]);
 	};
-	const URL = "https://netflix-clone-eta-snowy-95.vercel.app"
+
 	const handleSearch = async (e) => {
 		e.preventDefault();
 		try {
-			const res = await axios.get(`${URL}/api/v1/search/${activeTab}/${searchTerm}`);
+			const res = await axios.get(`/api/v1/search/${activeTab}/${searchTerm}`);
 			setResults(res.data.content);
 		} catch (error) {
 			if (error.response.status === 404) {

@@ -7,7 +7,7 @@ export default defineConfig({
 	server: {
 		proxy: {
 			"/api": {
-				target: "https://netflix-clone-eta-snowy-95.vercel.app",
+				target: "http://localhost:5000",
 			},
 		},
 	},
