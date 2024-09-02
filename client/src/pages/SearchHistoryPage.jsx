@@ -19,14 +19,14 @@ function formatDate(dateString) {
 	// Return the formatted date string
 	return `${month} ${day}, ${year}`;
 }
-
+const URL = "https://netflix-clone-opal-sigma-59.vercel.app/"
 const SearchHistoryPage = () => {
 	const [searchHistory, setSearchHistory] = useState([]);
 
 	useEffect(() => {
 		const getSearchHistory = async () => {
 			try {
-				const res = await axios.get(`/api/v1/search/history`);
+				const res = await axios.get(`${URL}/api/v1/search/history`);
 				setSearchHistory(res.data.content);
 			} catch (error) {
 				setSearchHistory([]);
