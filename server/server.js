@@ -15,7 +15,7 @@ import cors from 'cors'
 
 const app = express();
 app.use(cors({
-	origin:["https://netflix-clone-frontend-plum.vercel.app/"],
+	origin:["https://netflix-clone-frontend-plum.vercel.app"],
 	methods:["POST","GET","PUT"],
 	credentials:true
   }));
