@@ -19,7 +19,7 @@ const WatchPage = () => {
 	const { contentType } = useContentStore();
 
 	const sliderRef = useRef(null);
-	const URL = "https://netflix-clone-opal-sigma-59.vercel.app/"
+	const URL = "https://netflix-clone-opal-sigma-59.vercel.app"
 	useEffect(() => {
 		const getTrailers = async () => {
 			try {
