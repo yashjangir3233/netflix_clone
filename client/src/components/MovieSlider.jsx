@@ -15,7 +15,7 @@ const MovieSlider = ({ category }) => {
 	const formattedCategoryName =
 		category.replaceAll("_", " ")[0].toUpperCase() + category.replaceAll("_", " ").slice(1);
 	const formattedContentType = contentType === "movie" ? "Movies" : "TV Shows";
-	const URL = "https://netflix-clone-opal-sigma-59.vercel.app"
+	const URL = "https://netflix-clone-eta-snowy-95.vercel.app"
 	useEffect(() => {
 		const getContent = async () => {
 			const res = await axios.get(`${URL}/api/v1/${contentType}/${category}`);

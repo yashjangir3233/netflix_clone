@@ -5,7 +5,7 @@ import { useAuthStore } from "../store/authUser";
 const LoginPage = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	const URL = "https://netflix-clone-opal-sigma-59.vercel.app"
+	const URL = "https://netflix-clone-eta-snowy-95.vercel.app"
 
 	const { login, isLoggingIn } = useAuthStore();
 

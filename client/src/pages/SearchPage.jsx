@@ -19,7 +19,7 @@ const SearchPage = () => {
 		tab === "movie" ? setContentType("movie") : setContentType("tv");
 		setResults([]);
 	};
-	const URL = "https://netflix-clone-opal-sigma-59.vercel.app"
+	const URL = "https://netflix-clone-eta-snowy-95.vercel.app"
 	const handleSearch = async (e) => {
 		e.preventDefault();
 		try {
